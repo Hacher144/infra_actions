@@ -50,7 +50,7 @@ jobs:
     needs: build_and_push_to_docker_hub
     steps:
     - name: executing remote ssh commands to deploy
-      uses: hacher144/ssh-action@master
+      uses: hacher144/infra_actions@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
